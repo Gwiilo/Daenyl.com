@@ -106,15 +106,15 @@ function draw() {
   textSize((width + height)/20 + 50);
   text("Counter",window.innerWidth/3-1,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
   
-  fill(R-50,B-50,G-50);
+  fill(R-50,B-50,G-50,75);
   textSize((width + height)/20 + 50);
   text("Counter",window.innerWidth/3-2,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
   
-  fill(R-50,B-50,G-50);
+  fill(R-50,B-50,G-50,50);
   textSize((width + height)/20 + 50);
   text("Counter",window.innerWidth/3-3,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
   
-  fill(R-50,B-50,G-50);
+  fill(R-50,B-50,G-50,25);
   textSize((width + height)/20 + 50);
   text("Counter",window.innerWidth/3-4,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
   
@@ -130,15 +130,15 @@ function draw() {
   textSize((width + height)/20);
   text(number,window.innerWidth/3-1,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
   
-  fill(R-50, B-50, G-50);
+  fill(R-50, B-50, G-50,75);
   textSize((width + height)/20);
   text(number,window.innerWidth/3-2,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
   
-  fill(R-50, B-50, G-50);
+  fill(R-50, B-50, G-50,50);
   textSize((width + height)/20);
   text(number,window.innerWidth/3-3,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
   
-  fill(R-50, B-50, G-50);
+  fill(R-50, B-50, G-50,25);
   textSize((width + height)/20);
   text(number,window.innerWidth/3-4,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
   
