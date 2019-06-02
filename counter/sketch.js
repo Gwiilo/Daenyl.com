@@ -120,7 +120,7 @@ function keyPressed() {
   Bchoose = round(random(smallerChange,largerChange));
 }
 
-function touchStarted() {
+function touchEnded() {
   number += 1;
   Rchoose = round(random(smallerChange,largerChange));
   Gchoose = round(random(smallerChange,largerChange));
