@@ -119,3 +119,10 @@ function keyPressed() {
   Gchoose = round(random(smallerChange,largerChange));
   Bchoose = round(random(smallerChange,largerChange));
 }
+
+function touchStarted() {
+  number += 1;
+  Rchoose = round(random(smallerChange,largerChange));
+  Gchoose = round(random(smallerChange,largerChange));
+  Bchoose = round(random(smallerChange,largerChange));
+}
