@@ -100,13 +100,31 @@ function draw() {
     {
         Gchoose1 = -speed;
     }
-    fill(R-smallerChange/2+50, B-smallerChange/2+50, G-smallerChange/2+50);
   background(R-180,B-180,G-180,50);
+  fill(R-50,B-50,G-50);
+  textSize((width + height)/20 + 50);
+  text("Counter",window.innerWidth/3-3,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
+  
+  fill(R-50,B-50,G-50);
+  textSize((width + height)/20 + 50);
+  text("Counter",window.innerWidth/3-6,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
+  
+  fill(R, B, G);
   textSize((width + height)/20 + 50);
   text("Counter",window.innerWidth/3,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
+  
+  fill(R-50, B-50, G-50);
   textSize((width + height)/20);
-  textAlign(CENTER, CENTER);
+  text(number,window.innerWidth/3-3,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
+  
+  fill(R-50, B-50, G-50);
+  textSize((width + height)/20);
+  text(number,window.innerWidth/3-6,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
+  
+  fill(R-smallerChange/2+50, B-smallerChange/2+50, G-smallerChange/2+50);
+  textSize((width + height)/20);
   text(number,window.innerWidth/3,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
+  
   ellipse(mouseX,mouseY,2,2)
 }
 
