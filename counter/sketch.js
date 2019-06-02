@@ -47,6 +47,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   //textFont(inconsolata);
   textSize(20);
+  textFont('Arial');
   fill(222,222,222);
   textAlign(CENTER, CENTER);
   r1 = random(0,256);
@@ -103,11 +104,23 @@ function draw() {
   background(R-180,B-180,G-180,50);
   fill(R-50,B-50,G-50);
   textSize((width + height)/20 + 50);
+  text("Counter",window.innerWidth/3-1,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
+  
+  fill(R-50,B-50,G-50);
+  textSize((width + height)/20 + 50);
+  text("Counter",window.innerWidth/3-2,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
+  
+  fill(R-50,B-50,G-50);
+  textSize((width + height)/20 + 50);
   text("Counter",window.innerWidth/3-3,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
   
   fill(R-50,B-50,G-50);
   textSize((width + height)/20 + 50);
-  text("Counter",window.innerWidth/3-6,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
+  text("Counter",window.innerWidth/3-4,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
+  
+  fill(R, B, G);
+  textSize((width + height)/20 + 50);
+  text("Counter",window.innerWidth/3,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
   
   fill(R, B, G);
   textSize((width + height)/20 + 50);
@@ -115,11 +128,19 @@ function draw() {
   
   fill(R-50, B-50, G-50);
   textSize((width + height)/20);
+  text(number,window.innerWidth/3-1,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
+  
+  fill(R-50, B-50, G-50);
+  textSize((width + height)/20);
+  text(number,window.innerWidth/3-2,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
+  
+  fill(R-50, B-50, G-50);
+  textSize((width + height)/20);
   text(number,window.innerWidth/3-3,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
   
   fill(R-50, B-50, G-50);
   textSize((width + height)/20);
-  text(number,window.innerWidth/3-6,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
+  text(number,window.innerWidth/3-4,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
   
   fill(R-smallerChange/2+50, B-smallerChange/2+50, G-smallerChange/2+50);
   textSize((width + height)/20);
