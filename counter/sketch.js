@@ -55,6 +55,7 @@ function setup() {
   r1choose = random(0,256);
   r2choose = random(0,256);
   r3choose = random(0,256);
+  noStroke();
 }
 
 function draw() {
@@ -100,13 +101,13 @@ function draw() {
         Gchoose1 = -speed;
     }
     fill(R-smallerChange/2+50, B-smallerChange/2+50, G-smallerChange/2+50);
-  background(R-180,B-180,G-180);
+  background(R-180,B-180,G-180,50);
   textSize((width + height)/20 + 50);
   text("Counter",window.innerWidth/3,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
   textSize((width + height)/20);
   textAlign(CENTER, CENTER);
   text(number,window.innerWidth/3,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
-  
+  ellipse(mouseX,mouseY,2,2)
 }
 
 function windowResized() {
