@@ -18,7 +18,7 @@ var speed = 1;
 
 
 
-
+var seizure = 0
 
 
 
@@ -57,6 +57,7 @@ function setup() {
   r2choose = random(0,256);
   r3choose = random(0,256);
   noStroke();
+  filter(INVERT)
 }
 
 function draw() {
@@ -101,7 +102,9 @@ function draw() {
     {
         Gchoose1 = -speed;
     }
-  background(R-180,B-180,G-180,50);
+  push();
+  textAlign(CENTER,CENTER)
+  background(R-150,B-150,G-150,50);
   fill(R-50,B-50,G-50);
   textSize((width + height)/20 + 50);
   text("Counter",window.innerWidth/3-1,window.innerHeight/3-20,window.innerWidth/3,window.innerHeight/3-20)
@@ -145,8 +148,26 @@ function draw() {
   fill(R-smallerChange/2+50, B-smallerChange/2+50, G-smallerChange/2+50);
   textSize((width + height)/20);
   text(number,window.innerWidth/3,window.innerHeight/3,window.innerWidth/3,window.innerHeight/3)
+  pop();
+  fill(R-80,B-80,G-80,5);
   
-  ellipse(mouseX,mouseY,2,2)
+  
+  if (keyIsPressed && key == 's') {
+    seizure = 1
+  }
+  
+  if (keyIsPressed && key == 't') {
+    seizure = 0
+  }
+  
+  
+  if (seizure === 1) {
+    textSize((width + height)/100);
+    textAlign(RIGHT,CENTER)
+    fill(R-smallerChange/2+50, B-smallerChange/2+50, G-smallerChange/2+50,20);
+    text("SEIZURE MODE ACTIVATED",window.innerWidth/1.5,window.innerHeight/1.4,window.innerWidth/3,window.innerHeight/3)
+    text("'T' to deactivate",window.innerWidth/1.5,window.innerHeight/1.4 + 20,window.innerWidth/3,window.innerHeight/3)
+  }
 }
 
 function windowResized() {
@@ -154,13 +175,21 @@ function windowResized() {
 }
 
 function keyPressed() {
-  number += 1;
-  Rchoose = round(random(smallerChange,largerChange));
-  Gchoose = round(random(smallerChange,largerChange));
-  Bchoose = round(random(smallerChange,largerChange));
+    if (keyCode == 32) {
+    if (seizure == 1) {
+      filter(INVERT,1)
+    }
+    number += 1;
+    Rchoose = round(random(smallerChange,largerChange));
+    Gchoose = round(random(smallerChange,largerChange));
+    Bchoose = round(random(smallerChange,largerChange));
+  }
 }
 
 function touchEnded() {
+  if (seizure == 1) {
+      filter(INVERT,1)
+    }
   number += 1;
   Rchoose = round(random(smallerChange,largerChange));
   Gchoose = round(random(smallerChange,largerChange));
