@@ -178,7 +178,7 @@ function keyPressed() {
     if (keyCode == 32) {
     if (seizure == 1) {
       filter(INVERT,1)
-      filter(BLUR)
+      //filter(BLUR)
     }
     number += 1;
     Rchoose = round(random(smallerChange,largerChange));
