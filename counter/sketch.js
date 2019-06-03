@@ -178,12 +178,13 @@ function keyPressed() {
     if (keyCode == 32) {
     if (seizure == 1) {
       filter(INVERT,1)
+      filter(BLUR)
     }
     number += 1;
     Rchoose = round(random(smallerChange,largerChange));
     Gchoose = round(random(smallerChange,largerChange));
     Bchoose = round(random(smallerChange,largerChange));
-    save(number,'highscore.json')
+    //save(number,'highscore.json')
   }
 }
 
