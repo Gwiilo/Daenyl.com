@@ -166,7 +166,7 @@ function draw() {
     textAlign(RIGHT,CENTER)
     fill(R-smallerChange/2+50, B-smallerChange/2+50, G-smallerChange/2+50,20);
     text("SEIZURE MODE ACTIVATED",window.innerWidth/1.5,window.innerHeight/1.4,window.innerWidth/3,window.innerHeight/3)
-    text("'T' to deactivate",window.innerWidth/1.5,window.innerHeight/1.4 + 20,window.innerWidth/3,window.innerHeight/3)
+    text("'T' to deactivate",window.innerWidth/1.5,window.innerHeight/1.35,window.innerWidth/3,window.innerHeight/3)
   }
 }
 
@@ -183,6 +183,7 @@ function keyPressed() {
     Rchoose = round(random(smallerChange,largerChange));
     Gchoose = round(random(smallerChange,largerChange));
     Bchoose = round(random(smallerChange,largerChange));
+    save(number,'highscore.json')
   }
 }
 
